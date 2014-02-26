@@ -1,0 +1,12 @@
+create table report (
+report_id int not null auto_increment primary key,
+description varchar(100),
+locationX int,
+locationY int,
+victim_name varchar(50),
+cr_ts timestamp
+);
+
+select * from report where description = 'Theft';
+
+select count(*) as countRows from report;
