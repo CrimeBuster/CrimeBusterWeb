@@ -2,10 +2,12 @@ body {
 	font-family: Verdana, Geneva, sans-serif;
 	padding: 0;
 	margin: 0;
+	background-color: orange;
 }
 
 #main h3 {
 	margin: 15px;
+	color: blue;
 }
 
 #map {
