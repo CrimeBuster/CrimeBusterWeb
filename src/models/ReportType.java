@@ -1,18 +1,18 @@
 package models;
 
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Id;
+//import javax.persistence.Column;
+//import javax.persistence.Id;
 
 public class ReportType implements Serializable 
 {   
-  @Id
+  //@Id
   private int index;
 
-  @Column(name="Id")  
+ // @Column(name="Id")  
   private int id;
   
-  @Column(name="Name")  
+  //@Column(name="Name")  
   private String name;
 
   

@@ -1,46 +1,48 @@
 package models;
 
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Id;
+//import javax.persistence.Column;
+//import javax.persistence.Id;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Report implements Serializable {
-	@Id
-	private int index;
-
-	@Column(name = "TypeId")
-	private int typeId;
 	
-	@Column(name = "Id")
+//	@Column(name = "Id")
 	private int id;
+	
+//	@Column(name = "TypeId")
+	private int typeId;
 
-	@Column(name = "Message")
+//	@Column(name = "Message")
 	private String message;
 
-	@Column(name = "Latitude")
+//	@Column(name = "Latitude")
 	private float latitude;
 
-	@Column(name = "Longitude")
+//	@Column(name = "Longitude")
 	private float longitude;
 
-	@Column(name = "ResourceURL")
+//	@Column(name = "ResourceURL")
 	private String resourceURL;
 
-	@Column(name = "Timestamp")
+//	@Column(name = "Timestamp")
 	private String timestamp;
 
-	@Column(name = "UserName")
+//	@Column(name = "UserName")
 	private String userName;
 
 	public Report() {
 
 	}
 
-	public Report(int index, int id, String message,
+	public Report(int id, int typeId, String message,
 			float latitude, float longitude, String resourceURL,
 			String timestamp, String userName) {
-		this.index = index;
+		
 		this.id = id;
+		this.typeId = typeId;
 		this.message = message;
 		this.latitude = latitude;
 		this.longitude = longitude;
@@ -48,15 +50,6 @@ public class Report implements Serializable {
 		this.timestamp = timestamp;
 		this.userName = userName;
 	}
-
-	public int getIndex() {
-		return index;
-	}
-
-	public void setIndex(int index) {
-		this.index = index;
-	}	
-	
 
 	public int getTypeId() {
 		return typeId;

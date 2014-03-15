@@ -7,8 +7,8 @@ import java.sql.ResultSet;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+//import javax.persistence.Entity;
+//import javax.persistence.Table;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -18,8 +18,8 @@ import javax.ws.rs.Produces;
 import models.ReportType;
 
 @WebService()
-@Entity
-@Table(name = "REPORTTYPE")
+//@Entity
+//@Table(name = "REPORTTYPE")
 @Path("/reporttype")
 //@NamedQuery(name="selectReportType", query="select ID, NAME from REPORTTYPE")
 public class MyReportType 

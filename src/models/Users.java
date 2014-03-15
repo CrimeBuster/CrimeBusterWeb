@@ -1,39 +1,39 @@
 package models;
 
 import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Id;
+//import javax.persistence.Column;
+//import javax.persistence.Id;
 
 public class Users implements Serializable 
 {   
-  @Id
+//  @Id
   private int index;
 
-  @Column(name="UserName")  
+//  //@Column(name="UserName")  
   private String userName;
   
-  @Column(name="FirstName")  
+ // //@Column(name="FirstName")  
   private String firstName;
 
-  @Column(name="LastName")  
+  ////@Column(name="LastName")  
   private String lastName;
   
-  @Column(name="Gender")  
+  ////@Column(name="Gender")  
   private String gender;
   
-  @Column(name="Email")  
+  ////@Column(name="Email")  
   private String email;
   
-  @Column(name="Phone")  
+  //@Column(name="Phone")  
   private int phone;
   
-  @Column(name="Address")  
+  //@Column(name="Address")  
   private String address;
   
-  @Column(name="ZipCode")  
+  //@Column(name="ZipCode")  
   private int zipCode;
   
-  @Column(name="Token")  
+  //@Column(name="Token")  
   private String token;
   
    public Users()  

@@ -7,19 +7,19 @@ import java.sql.ResultSet;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;
-import javax.persistence.Entity;
+//import javax.persistence.Entity;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.persistence.Table;
+//import javax.persistence.Table;
 
 import models.Report;
 
 @WebService()
-@Entity
-@Table(name = "REPORT")
+//@Entity
+//@Table(name = "REPORT")
 @Path("/report")
 //@NamedQuery(name="selectReport", query="select ID, MESSAGE from REPORT")
 public class MyReport 
